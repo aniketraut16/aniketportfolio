@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: brown;
+}
+
+.sidebar,
+.content {
+    border: 1px solid black;
+}
+
+.sidebar {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.sidebar1 {
+    /* background-color: #252525; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.fa-brands {
+    font-size: 1.7em;
+}
+
+.social-media-links {
+    display: flex;
+    width: 90%;
+    margin: 20px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.imagebox {
+    border-radius: 100%;
+    height: 13em;
+    width: 13em;
+    margin: 20px 0px;
+    background: url("./imgs/profilpic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+.navigation-bar a {
+    width: 90%;
+    text-decoration: none;
+    color: white;
+    /* margin: 20px; */
+    /* border: 1px solid white; */
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 5px;
+    padding: 5px;
+
+
+}
+
+.navigation-bar a i {
+    margin: 0px 5px;
+}
+
+.navigation-bar a:hover {
+    background-color: rgba(0, 0, 0);
+
+}
+
+
+/* ====== Content Styling ====== */
+
+.content {
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+.home {
+    height: 100vh;
+    background: url("./imgs/backgroung.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info {
+    height: 50%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.auto-type {
+    color: brown;
+}
+
+
+/* ============ SKILLS - STYLING ============== */
+
+#skills {
+    height: 80vh;
+    width: 80%;
+    margin: 10vh 10%;
+    /* border: 1px solid #fff; */
+    /* background-color: #0d0206; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.skill-type {
+    /* border: 1px solid green; */
+    height: 50%;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.skill-type-box {
+    width: 90%;
+    height: 90%;
+    border: 2px solid #252525;
+    border-radius: 10px;
+    border-bottom: 5px solid #252525;
+}
+
+.frontend:hover {
+    border: 2px solid rgb(0, 121, 181);
+    border-bottom: 5px solid rgb(0, 121, 181);
+
+}
+
+.frontend-color {
+    height: 30%;
+    background-color: rgb(0, 170, 255);
+    background: url("./imgs/blue-skill.jpg");
+    background-size: cover;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+    text-align: center;
+    font-size: 2em;
+    padding-top: 12px;
+}
+
+.frontend-info {
+    height: 70%;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.backend:hover {
+    border: 2px solid green;
+    border-bottom: 5px solid green;
+
+}
+
+.backend-color {
+    height: 30%;
+    background-color: rgb(43, 255, 0);
+    background: url("./imgs/green-skill.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+    text-align: center;
+    font-size: 2em;
+    padding-top: 12px;
+}
+
+.backend-info {
+    height: 70%;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.prg-lang:hover {
+    border: 2px solid orange;
+    border-bottom: 5px solid orange;
+
+}
+
+.prg-lang-color {
+    height: 30%;
+    background-color: rgb(202, 236, 8);
+    background: url("./imgs/yellow-skill.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+
+    text-align: center;
+    font-size: 2em;
+    padding-top: 12px;
+}
+
+.prg-lang-info {
+    height: 70%;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.other-skill:hover {
+    border: 2px solid rgb(90, 13, 141);
+    border-bottom: 5px solid rgb(90, 13, 141);
+
+}
+
+.other-skill-color {
+    height: 30%;
+    background-color: rgb(160, 17, 255);
+    background: url("./imgs/purple-skill.jpg");
+    background-size: cover;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+    text-align: center;
+    font-size: 2em;
+    padding-top: 12px;
+
+}
+
+.other-skill-info {
+    height: 70%;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+/* ============== Project-STYLING============ */
+
+#projects {
+    /* background-color: #0d0206; */
+    height: 80vh;
+    width: 80%;
+    margin: 10vh 10%;
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+}
+
+.web-projects,
+.video-projects {
+    border: 1px solid blueviolet;
+}
+
+.web-projects {
+    display: grid;
+}
+
+/* @media screen and (max-width:420px) {
+    .page {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .imagebox {
+        border-radius: 100%;
+        height: 11em;
+        width: 11em;
+    }
+
+    .sidebar1 {
+        display: flex;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media-links {
+        background-color: #0d020682;
+        padding: 10px;
+        border-radius: 5px;
+        width: 80%;
+    }
+
+    .info {
+        font-size: 1.1em;
+        height: 20vh;
+    }
+
+} */
