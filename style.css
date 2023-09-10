@@ -112,37 +112,141 @@ body {
     background-color: #000000;
 }
 
-.home {
+
+#home {
     height: 100vh;
-    background: url("./imgs/backgroung.jpg");
+    background: url("./imgs/sunset.jpg");
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 .info {
-    height: 50%;
+    height: 70%;
     /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 3em;
+    font-size: 3.5em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     color: white;
     font-family: 'Poppins', sans-serif;
+    z-index: 1;
 }
+
+
+
 
 
 .auto-type {
     color: brown;
 }
 
+/* ============ ABOUT-ME ================= */
+
+#aboutme {
+    height: 80vh;
+}
+
+#aboutme .meinfo {
+    width: 80%;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: #25252568;
+    padding: 3%;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #252525;
+    border-bottom: 5px solid #252525;
+
+}
+
+#aboutme .key-points {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 5vh auto;
+}
+
+.key-point {
+    width: 48%;
+    height: 30vh;
+    background-color: #25252568;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #252525;
+    border-bottom: 5px solid #252525;
+
+}
+
+
+.key-point:hover {
+    border: 2px solid rgb(62, 62, 62);
+    border-bottom: 5px solid rgb(62, 62, 62);
+}
+
+#aboutme .meinfo:hover {
+    border: 2px solid rgb(62, 62, 62);
+    border-bottom: 5px solid rgb(62, 62, 62);
+
+}
+
+.key-box {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+    font-size: 2.7em;
+    text-align: center;
+    border-right: 2px solid gold;
+}
+
+.hacker-rating {
+    text-align: center;
+    font-size: 1.5em;
+    display: grid;
+    gap: 3px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.fa-star {
+    padding-top: 7px;
+}
+
+
+
+.edu-logo {
+    background: url("./imgs/rcoem-logo.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
 
 /* ============ SKILLS - STYLING ============== */
 
 #skills {
-    height: 80vh;
+    height: 60vh;
     width: 80%;
-    margin: 10vh 10%;
+    margin: 10vh auto;
     /* border: 1px solid #fff; */
     /* background-color: #0d0206; */
     display: flex;
@@ -165,8 +269,8 @@ body {
 .skill-type-box {
     width: 90%;
     height: 90%;
-    border: 2px solid #252525;
     border-radius: 10px;
+    border: 2px solid #252525;
     border-bottom: 5px solid #252525;
 }
 
@@ -177,7 +281,7 @@ body {
 }
 
 .frontend-color {
-    height: 30%;
+    height: 40%;
     background-color: rgb(0, 170, 255);
     background: url("./imgs/blue-skill.jpg");
     background-size: cover;
@@ -187,10 +291,11 @@ body {
     text-align: center;
     font-size: 2em;
     padding-top: 12px;
+    -webkit-text-stroke: 1px black;
 }
 
 .frontend-info {
-    height: 70%;
+    height: 60%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
 }
@@ -202,7 +307,7 @@ body {
 }
 
 .backend-color {
-    height: 30%;
+    height: 40%;
     background-color: rgb(43, 255, 0);
     background: url("./imgs/green-skill.jpg");
     background-size: cover;
@@ -213,10 +318,11 @@ body {
     text-align: center;
     font-size: 2em;
     padding-top: 12px;
+    -webkit-text-stroke: 1px black;
 }
 
 .backend-info {
-    height: 70%;
+    height: 60%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
 }
@@ -228,7 +334,7 @@ body {
 }
 
 .prg-lang-color {
-    height: 30%;
+    height: 40%;
     background-color: rgb(202, 236, 8);
     background: url("./imgs/yellow-skill.jpg");
     background-size: cover;
@@ -240,10 +346,11 @@ body {
     text-align: center;
     font-size: 2em;
     padding-top: 12px;
+    -webkit-text-stroke: 1px black;
 }
 
 .prg-lang-info {
-    height: 70%;
+    height: 60%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
 }
@@ -255,7 +362,7 @@ body {
 }
 
 .other-skill-color {
-    height: 30%;
+    height: 40%;
     background-color: rgb(160, 17, 255);
     background: url("./imgs/purple-skill.jpg");
     background-size: cover;
@@ -265,13 +372,34 @@ body {
     text-align: center;
     font-size: 2em;
     padding-top: 12px;
+    -webkit-text-stroke: 1px black;
 
 }
 
 .other-skill-info {
-    height: 70%;
+    height: 60%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
+}
+
+
+.skill-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    text-align: center;
+    font-size: 1em;
+}
+
+.skill-info p {
+    font-size: 0.9em;
+    margin: 0px;
+
+}
+
+.skill-info i {
+    margin-top: 7px;
+    font-size: 3em;
 }
 
 /* ============== Project-STYLING============ */
@@ -333,3 +461,8 @@ body {
     }
 
 } */
+
+
+.active {
+    color: aqua;
+}
