@@ -1,0 +1,117 @@
+@media screen and (max-width:420px) {
+
+    .content::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .page {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .imagebox {
+        border-radius: 100%;
+        height: 9em;
+        width: 9em;
+    }
+
+    .sidebar1 {
+        display: flex;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media-links {
+        background-color: #0d020682;
+        padding: 10px;
+        border-radius: 5px;
+        width: 80%;
+    }
+
+    .info {
+        font-size: 1.1em;
+        height: 20vh;
+        text-align: center;
+    }
+
+
+    #aboutme {
+        height: 190vh;
+    }
+
+    .meinfo h1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .meinfo p {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .key-points {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rating {
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .key-point {
+        width: 100%;
+        height: 50vh;
+        font-size: 15px;
+    }
+
+    .key-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        border-right: 0px solid gold;
+        border-bottom: 2px solid gold;
+        margin-bottom: 10px;
+        padding: 0.5em;
+    }
+
+    .edu-logo {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    #skills {
+        width: 95%;
+        margin: 5% auto;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-type {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .skill-info {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .frontend-color {
+        padding: 0;
+        line-height: 40px;
+    }
+
+}
