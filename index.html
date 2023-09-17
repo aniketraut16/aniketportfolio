@@ -16,23 +16,26 @@
       <nav class="sidebar">
         <div class="imagebox"></div>
         <div class="social-media-links">
-          <i class="fa-brands fa-instagram " style="color: #e4405f;"></i>
-          <i class="fa-brands fa-twitter" style="color: #409ae4;"></i>
-          <i class="fa-brands fa-hackerrank" style="color: #54ca31;"></i>
-          <i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i>
-          <i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i>
+          <a href=""><i class="fa-brands fa-instagram " style="color: #e4405f;"></i></a>
+          <a href=""><i class="fa-brands fa-twitter" style="color: #409ae4;"></i></a>
+          <a href=""><i class="fa-brands fa-hackerrank" style="color: #54ca31;"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i></a>
+          <a href="https://github.com/aniketraut16" target="_blank"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i></a>
         </div>
         <div class="navigation-bar">
           <a class = "active" href="#home"><i class="fa-solid fa-house"></i> Home</a>
           <a href="#aboutme "><i class="fa-solid fa-user"></i> About me</a>
           <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
           <a href="#projects"><i class="fa fa-laptop" aria-hidden="true"></i> Projects</a>
-          <a href="#achievements"><i class="fa-solid fa-ranking-star"></i> Achievements</a>
+          <!-- <a href="#achievements"><i class="fa-solid fa-ranking-star"></i> Achievements</a> -->
           <a href="#contact"><i class="fa fa-commenting" aria-hidden="true"></i> Contact</a>
         </div>
             </nav>
       <aside class="content">
         <section id="home">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
           <nav class="sidebar1">
             <div class="imagebox"></div>
             <div class="social-media-links">
@@ -157,18 +160,69 @@
         </section>
 
         <section id="projects">
-          <div class="web-projects">
-            <div class="ind-project">
-              
+         <div class="webprojects">
+          <div class="one-pro">
+            <div class="pro-thumbnail"></div>
+            <div class="pro-description">
+              <h2>Quizz App</h2>
+              <p>This is my quizz app</p>
+              <p><i></i> <a href="#">Link</a></p>
             </div>
           </div>
-          <div class="video-projects"></div>
+          <div class="one-pro">
+            <div class="pro-thumbnail"></div>
+            <div class="pro-description">
+              <h2>Quizz App</h2>
+              <p>This is my quizz app</p>
+              <p><i></i> <a href="#">Link</a></p>
+            </div>
+          </div>
+          <div class="one-pro">
+            <div class="pro-thumbnail"></div>
+            <div class="pro-description">
+              <h2>Quizz App</h2>
+              <p>This is my quizz app</p>
+              <p><i></i> <a href="#">Link</a></p>
+            </div>
+          </div>
+          <div class="one-pro">
+            <div class="pro-thumbnail"></div>
+            <div class="pro-description">
+              <h2>Quizz App</h2>
+              <p>This is my quizz app</p>
+              <p><i></i> <a href="#">Link</a></p>
+            </div>
+          </div>
+        </div>
+        <a class="more-pro" href="#">More Projects</a>
         </section>
+        <section id="contacts">
+          <form onsubmit="sendEmail(); reset(); return false;">
+          <h1>Contact Me</h1>
+          <div class="name-email">
+            <div class="contact-details">
+              <label for="name">Enter you name:</label>
+              <input type="text" id="name" autocomplete="off" required>
+            </div>
+            <div class="contact-details">
+              <label for="email">Enter you Email::</label>
+              <input type="email" id="email" autocomplete="off" required>
+            </div>
+          </div>
+          <label for="message">Write your message:</label>
+          <textarea name="message" id="message" required></textarea>
+          <button type="submit">Message me</button>
+        </form>
+        </section>
+
+        <footer>
+          All rights are reserved to me
+        </footer>
       </aside>
     </div>
     </div>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
   </body>

@@ -93,7 +93,7 @@
     #skills {
         width: 95%;
         margin: 5% auto;
-        height: 200vh;
+        height: 165vh;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -112,6 +112,45 @@
     .frontend-color {
         padding: 0;
         line-height: 40px;
+    }
+
+    #projects {
+        height: 110vh;
+        margin-bottom: 0px;
+    }
+
+    .one-pro {
+        width: 46%;
+        height: 17em;
+    }
+
+    .pro-description {
+        padding: 0.7em;
+        font-size: 0.6em;
+    }
+
+    .more-pro {
+        display: block;
+        float: none;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #contacts {
+        margin-top: 0%;
+        height: 80vh;
+    }
+
+    .name-email {
+        flex-direction: column;
+    }
+
+    .contact-details {
+        width: 90%;
+    }
+
+    #contacts form button {
+        width: 90%;
     }
 
 }
