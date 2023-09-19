@@ -5,40 +5,6 @@ var typed = new Typed(".auto-type", {
   loop: true,
 });
 
-let sections = document.querySelectorAll("section");
-let navlinks = document.querySelectorAll(".navigation-bar a");
-let content = document.querySelector(".content");
-let lastsection = document.getElementById("contacts");
-let rect = lastsection.getBoundingClientRect();
-content.onscroll = () => {
-  console.log(content.offsetTop);
-};
-
-// window.onscroll = () => {
-//   // Use window.scrollY to get the current scroll position
-//   let top = window.scrollY; // Changed from window.screenY
-
-//   sections.forEach((sec) => {
-//     let offset = sec.offsetTop;
-//     let height = sec.offsetHeight;
-//     let id = sec.getAttribute("id");
-
-//     if (top >= offset && top < offset + height) {
-//       navlinks.forEach((links) => {
-//         links.classList.remove("active");
-//       });
-
-//       // Use document.querySelector to find the navigation link with the corresponding href
-//       let link = document.querySelector(
-//         ".navigation-bar a[href='#" + id + "']"
-//       );
-
-//       if (link) {
-//         link.classList.add("active");
-//       }
-//     }
-//   });
-// };
 function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
@@ -49,4 +15,43 @@ function sendEmail() {
     Subject: "This is the subject",
     Body: "And this is the body",
   }).then((message) => alert(message));
+}
+
+const allSections = document.querySelectorAll("section");
+if (document.querySelector(".content").clientWidth > 500) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        // console.log(`.nav-${entry.target.id}`);
+        document
+          .querySelector(`.nav-${entry.target.id}`)
+          .classList.add("active");
+      } else {
+        entry.target.classList.remove("show");
+        document
+          .querySelector(`.nav-${entry.target.id}`)
+          .classList.remove("active");
+      }
+    });
+  });
+  allSections.forEach((e1) => observer.observe(e1));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        // console.log(`.nav-${entry.target.id}`);
+        document
+          .querySelector(`.snav-${entry.target.id}`)
+          .classList.add("active");
+      } else {
+        entry.target.classList.remove("show");
+        document
+          .querySelector(`.snav-${entry.target.id}`)
+          .classList.remove("active");
+      }
+    });
+  });
+  allSections.forEach((e1) => observer.observe(e1));
 }

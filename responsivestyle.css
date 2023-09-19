@@ -4,6 +4,37 @@
         width: 0px;
     }
 
+    .content .navigation-bar {
+        background-color: rgba(25, 25, 25, 0.4);
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        left: 5%;
+        bottom: 3%;
+        z-index: 9;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .content .navigation-bar a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+    }
+
+    .active {
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    .content .navigation-bar a i {
+        font-size: 1.4em;
+    }
+
+
     .page {
         height: 100vh;
         display: grid;
@@ -120,13 +151,20 @@
     }
 
     .one-pro {
-        width: 46%;
-        height: 17em;
+        width: 100%;
+        height: 16em;
     }
 
     .pro-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         padding: 0.7em;
-        font-size: 0.6em;
+        font-size: 0.8em;
+    }
+
+    .pro-description p {
+        margin-bottom: 5px;
     }
 
     .more-pro {
@@ -138,7 +176,8 @@
 
     #contacts {
         margin-top: 0%;
-        height: 80vh;
+        height: 100vh;
+        padding: 6em 0px;
     }
 
     .name-email {
@@ -146,7 +185,7 @@
     }
 
     .contact-details {
-        width: 90%;
+        width: 100%;
     }
 
     #contacts form button {
