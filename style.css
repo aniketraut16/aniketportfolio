@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: 'Nunito', sans-serif;
 }
 
 #stars {
@@ -964,7 +965,7 @@ body {
 
 .skill-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
     text-align: center;
     font-size: 1em;
@@ -994,7 +995,7 @@ body {
 
 .webprojects {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1005,7 +1006,7 @@ body {
 .one-pro {
     border: 1px solid #ccc;
     height: 100%;
-    width: 35%;
+    width: 30%;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -1028,6 +1029,12 @@ body {
 
 .tictac-thmp {
     background: url("./imgs/tictactoe-thumbnail.png");
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.qr-thmp {
+    background: url("./imgs/qrthumbnail.png");
     /* background-position: center; */
     background-size: cover;
 }
